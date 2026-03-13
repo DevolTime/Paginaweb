@@ -24,9 +24,21 @@
     <main>
 
         <h1 class="contacto-title">Contacto</h1>
-        <p class="correo_texto">Si deseas ponerte en contacto con nosotros, puedes hacerlo a través de los siguientes medios:</p>
-       
-        
+        <p class="correo_texto">Si deseas ponerte en contacto conmigo, puedes hacerlo a través del siguientes medio:</p>
+
+        <form class="contact-form" action="https://formspree.io/f/xwvrbygn" method="POST">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Enviar</button>
+
+        </form>
 
     </main>
     <footer>
