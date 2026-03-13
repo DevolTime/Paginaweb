@@ -14,10 +14,10 @@ body{
     min-height: 100vh;
 }
 
-header, nav{
+.navbar{
     display: flex;
-    padding: 20px 40px;
-    background-color: rgb(0, 0, 0);
+    padding: 4px 20px 4px 20px;
+    background-color: beige;
     justify-content: space-between;
     align-items: center;
 }
@@ -34,18 +34,31 @@ header, nav{
     display: flex;
     justify-content: end;
     align-items: center;
-    gap: 20px; 
+    gap: 20px;
+    list-style: none;
+
 }
 
 .menu_list a {
     text-decoration: none;
+    color: black;
+    font-weight: 600;
 }
 
+.menu_list a:hover{
+    color: white;
+    box-shadow: 0 0 10px black;
+    background-color: black;
+    border-radius: 3px;
+    transition: .3s;
+}
 
 footer{
     padding: 20px;
-    background-color: rgb(0, 0, 0);
-    color: white;
+    background-color: beige;
+    color: black;
+    text-align: center;
     margin-top: auto;
     font-size: 2rem;
+    font-weight: 600;
 }
