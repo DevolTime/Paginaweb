@@ -16,13 +16,79 @@
                 <li class="item"><a target="_blank" href="home.html">Inicio</a></li>
                 <li class="item"><a target="_blank" href="galeria.html">Galeria</a></li>
                 <li class="item"><a target="_blank" href="contacto.html">Contacto</a></li>
-                <li class="item"><a target="_blank" href="formu.html">Formulario</a></li>
+                <li class="item"><a href="#">Formulario</a></li>
             </ul>
         </nav>
     </header>
     <main>
 
-        <h1>Formulario</h1>
+        <form action="formualrio">
+            <h1 class="uno">Formulario</h1>
+            <p class="dos">Ingresa tus datos</p>
+
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" placeholder="Nombre" required>
+
+            <label for="lastname">Apellido:</label> 
+            <input type="text" id="lastname" name="lastname" placeholder="Apellido" required>
+
+            <label for="fecha">Fecha de Nacimiento:</label>
+            <input type="date" id="fecha" name="fecha" placeholder="Fecha de Nacimiento" required>
+
+            <label for="estadocivil">Estado Civil:</label>
+            <select id="estadocivil" name="estadocivil" required>
+                <option value="">Seleccionar</option>
+                <option value="soltero">Soltero</option>
+                <option value="casado">Casado</option>
+                <option value="divorciado">Divorciado</option>
+                <option value="viudo">Viudo</option>
+            </select>
+
+            <label for="tel">Celular:</label>
+            <input type="tel" id="tel" name="tel" placeholder="Celular" required>
+
+            <label for="Cedula">Cédula:</label>
+            <input type="number" id="cedula" name="cedula" placeholder="Cédula" required>
+
+            <label for="lugardeexpedicion">Lugar de Expedición:</label>
+            <input type="text" id="lugardeexpedicion" name="lugardeexpedicion" placeholder="Lugar de Expedición" required>
+
+            <label for="fechadeexpedicion">Fecha de Expedición:</label>
+            <input type="date" id="fechadeexpedicion" name="fechadeexpedicion" placeholder="Fecha de Expedición" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+
+            <label for="pais">País:</label>
+            <input type="text" id="pais" name="pais" placeholder="País" required>
+
+            <label for="departamento">Departamento:</label>
+            <input type="text" id="departamento" name="departamento" placeholder="Departamento" required>
+
+            <label for="ciudad">Ciudad:</label>
+            <input type="text" id="ciudad" name="ciudad" placeholder="Ciudad" required>
+
+            <label for="direccion">Dirección:</label>
+            <input type="text" id="direccion" name="direccion" placeholder="Dirección" required>
+            
+            <label for="CodigoPostal">Código Postal:</label>
+            <input type="text" id="CodigoPostal" name="CodigoPostal" placeholder="Código Postal" required>
+
+            <label for="alergias">¿Tienes alergias?</label>
+            <select id="alergias" name="alergias" required>
+                <option value="">Seleccionar</option>
+                <option value="si">Si</option>
+                <option value="no">No</option>
+            </select>
+
+            <label for="archivo">Archivo:</label>
+            <input type="file" id="archivo" name="archivo" required>
+
+            <button type="submit">Enviar</button>
+
+        </form>
+        
+        
 
     </main>
     <footer>

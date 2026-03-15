@@ -10,6 +10,7 @@ body{
 .correo_texto{
     text-align: center;
     font-size: 1.8rem;
+    font-weight: bold;
 }
 
 
@@ -26,6 +27,8 @@ body{
 .contact-form label {
     margin-top: 1rem;
     font-weight: 600;
+    font-size: 1.6rem;
+    color: black;
 }
 
 .contact-form input, .contact-form textarea {
@@ -49,7 +52,6 @@ body{
     cursor: pointer;
     font-size: 1.6rem;
 }
-
 
 .contact-form button:hover {
     background-color: #f0e68c;
