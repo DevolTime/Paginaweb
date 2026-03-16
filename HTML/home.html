@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./../CSS/home.css">
 </head>
+
 <body>
     <header>
         <nav class="navbar">
@@ -13,22 +15,145 @@
                 <img src="./../img/logo.png" alt="logo" class="imag">
             </div>
             <ul class="menu_list">
-                <li class="item"><a href="">Inicio</a></li>
-                <li class="item"><a target="_blank" href="galeria.html">Galeria</a></li>
-                <li class="item"><a target="_blank" href="contacto.html">Contacto</a></li>
-                <li class="item"><a target="_blank" href="formu.html">Formulario</a></li>
+                <li class="item"><a href="home.html">Inicio</a></li>
+                <li class="item"><a href="galeria.html">Galeria</a></li>
+                <li class="item"><a href="contacto.html">Contacto</a></li>
+                <li class="item"><a href="formu.html">Formulario</a></li>
             </ul>
         </nav>
     </header>
     <main>
 
-        <h1>Inicio</h1>
+        <nav>
+            <ul class="menu_late">
+                <li class="menulate"><a href="#inic">Inicio</a></li>
+                <li class="menulate"><a href="#propi">Propiedades</a></li>
+                <li class="menulate"><a href="#selec">Selectores</a></li>
+                <li class="menulate"><a href="#box">Box Model</a></li>
+                <li class="menulate"><a href="#flex">Flexbox</a></li>
+            </ul>
+        </nav>
+
+        <div class="concep">
+            <h1>🌟 Conceptos basicos de HTML y CSS 🌟</h1>
+            <p>HTML (HyperText Markup Language) es el lenguaje de marcado utilizado para estructurar y presentar
+                contenido en la web. CSS (Cascading Style Sheets) es el lenguaje de estilos utilizado para describir la
+                presentación de un documento HTML. Juntos, HTML y CSS permiten crear páginas web atractivas y
+                funcionales.</p>
+        </div>
+
+        <br>
+        <hr><br>
+
+        <article class="inicio" id="inic">
+            <h2>¿Qué es HTML?</h2>
+            <p>HTML es un lenguaje de marcado utilizado para estructurar y presentar contenido en la web. Es un
+                lenguajede marcado de etiquetas que utiliza la etiqueta &lt;html&gt; como el encabezado del documento.
+                HTML seutiliza para crear páginas web dinámicas y interactivas, y se utiliza para estructurar el
+                contenido dela página web.</p>
+
+            <h2>¿Qué es CSS?</h2>
+            <p>CSS (Cascading Style Sheets) es un lenguaje de estilos utilizado para describir la presentación de
+                undocumento HTML. CSS se utiliza para aplicar estilos a los elementos HTML, como el color, el tamaño,
+                lafuente, la posición y otros atributos. CSS se utiliza para crear páginas web atractivas y funcionales.
+            </p>
+        </article>
+
+        <section class="container">
+            <div>
+                <h2 class="Propiedades" id="propi">Propiedades</h2>
+                <p>En HTML existen diferentes etiquetas que permiten agregar y estructurar texto dentro de una página
+                    web. Estas etiquetas no solo sirven para mostrar palabras en pantalla, sino también para darles un
+                    significado semántico, lo que ayuda a los navegadores, motores de búsqueda y lectores de pantalla a
+                    interpretar mejor el contenido.
+                    Entre las más utilizadas se encuentran: &lt;p&gt;, &lt;h1&gt; hasta &lt;h6&gt;, &lt;a&gt;,
+                    &lt;img&gt;, &lt;ul&gt;, &lt;ol&gt;, &lt;li&gt;, &lt;table&gt;, &lt;tr&gt;, &lt;th&gt; y &lt;td&gt;.
+                </p>
+            </div>
+
+            <h2 class="selectores" id="selec">Selectores</h2>
+            <p>LEn CSS, los selectores son las herramientas que nos permiten aplicar estilos a elementos específicos
+                dentro de una página web. En otras palabras, sirven para indicar qué etiqueta o elemento HTML queremos
+                modificar y cómo queremos que se vea. Gracias a ellos podemos controlar propiedades como el color, el
+                tamaño de la fuente, los márgenes, la posición, el espaciado, entre muchas otras características
+                visuales.</p>
+
+            <ul>
+                <h3>✅ Importancia de los selectores</h3>
+                <p>Comprender cómo funcionan los selectores es fundamental porque nos permiten:</p>
+                <li><strong>Precisión:</strong> elegir exactamente qué elementos queremos modificar</li>
+                <li><strong>Eficiencia:</strong> aplicar estilos de forma organizada y reutilizable</li>
+                <li><strong>Escalabilidad:</strong> mantener el código CSS limpio y fácil de mantener</li>
+                <li><strong>Diseño profesional:</strong> lograr que la página tenga una apariencia coherente y atractiva
+                </li>
+            </ul>
+
+            <h3>✅ Tipos de selectores</h3>
+            <p>Los selectores se pueden clasificar en tres categorías:</p>
+            <ul>
+                <li><strong>Elementos:</strong> seleccionan elementos individuales, como &lt;p&gt;, &lt;h1&gt;,
+                    &lt;img&gt;, &lt;a&gt;, &lt;ul&gt;, &lt;li&gt;, &lt;table&gt; y &lt;tr&gt;.</li>
+                <li><strong>Clases:</strong> seleccionan elementos por su clase, como <code>.btn</code>,
+                    <code>.container</code>, <code>.row</code> y <code>.col</code>.
+                </li>
+                <li><strong>Id:</strong> seleccionan elementos por su identificador, como <code>#header</code>,
+                    <code>#footer</code>, <code>#menu</code> y <code>#content</code>.
+                </li>
+
+                <ul>
+                    <h2 class="boxmodel" id="box">Box Model</h2>
+                    <p>El modelo de caja es un modelo de diseño que se utiliza para crear diseños de interfaz de usuario
+                        (UI) en línea. El modelo de caja se basa en cuatro elementos fundamentales: contenedor, borde,
+                        espacio y contenido. Estos elementos se utilizan para crear diseños que se adapten a diferentes
+                        tamaños de pantalla y resoluciones de pantalla.</p>
+                    <p>El modelo de caja se divide en cuatro partes principales:</p>
+                    <ul>
+                        <li><strong>Contenedor:</strong> es el elemento que contiene todo el contenido de la página web.
+                        </li>
+                        <li><strong>Borde:</strong> es el elemento que se encuentra alrededor del contenedor y se
+                            utiliza para crear un efecto de borde.</li>
+                        <li><strong>Espacio:</strong> es el elemento que se encuentra entre los bordes y el contenido.
+                        </li>
+                        <li><strong>Contenido:</strong> es el elemento que contiene el contenido de la página web.</li>
+                    </ul>
+
+                    <h2 class="flexbox" id="flex">Flexbox</h2>
+                    <p>Flexbox en CSS es un sistema de diseño unidimensional que permite organizar y alinear elementos
+                        dentro de un contenedor de manera flexible y adaptable, ya sea en filas o columnas. Es
+                        especialmente útil para crear interfaces responsivas sin necesidad de usar flotados o
+                        posicionamiento complejo.</p>
+
+                    <h3>📌 Concepto básico</h3>
+                    <p>- <strong>Nombre completo:</strong> CSS Flexible Box Layout Module.
+                        <li>- <strong>Función principal:</strong> Distribuir espacio y alinear elementos dentro de un
+                            contenedor.</li>
+                        <li>- <strong>Unidimensional:</strong> Trabaja en una sola dirección a la vez (horizontal o
+                            vertical).
+                        <li>- <strong>Componentes clave:</strong></li>
+                        <li>- <strong>Flex container:</strong> El elemento padre con <strong>display: flex</strong> o
+                            <strong>display: inline-flex</strong>.</li>
+                    <p>- <strong>Flex items:</strong> Los elementos hijos que se organizan automáticamente dentro del
+                        contenedor.</li>
+
+                    <h3>🔑 Propiedades más importante</h3>
+                    <li><strong>- flex-direction:</strong>Define la dirección principal <strong>- (row, column</strong>)
+                    </li>
+                    <li><strong>- justify-content:</strong>Controla la alineación en el eje principal (izquierda,
+                        derecha, centro, espacio entre elementos).</li>
+                    <li><strong>- align-items:</strong>Controla la alineación en el eje secundario (arriba, abajo,
+                        centro).</li>
+                    <li><strong>- flex-wrap:</strong>CPermite que los elementos se ajusten en varias líneas si no caben
+                        en una sola.</li>
+                    <li><strong>- flex-grow, flex-shrink, flex-basis:</strong>Controlan cómo los elementos crecen, se
+                        encogen o definen su tamaño base.</li>
+        </section>
 
     </main>
-    
+
     <footer>
         <p>© 2026 Todos los derechos reservados</p>
     </footer>
 
 </body>
+
 </html>

@@ -54,6 +54,44 @@ body{
     transition: .3s;
 }
 
+/* Sidebar lateral (menu_late) */
+.menu_late {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    padding: 20px 15px;
+    background-color: rgba(200, 198, 198, 0.712);
+    border-right: 1px solid rgba(0, 0, 0, 0.15);
+    list-style: none;
+    border-radius: 20px;
+    box-shadow: #222 0 0 10px;
+}
+
+.menu_late .menulate {
+    margin-bottom: 12px;
+}
+
+.menu_late .menulate a {
+    text-decoration: none;
+    color: #222;
+    font-size: 1.6rem;
+    display: block;
+    padding: 8px 10px;
+    border-radius: 6px;
+}
+
+.menu_late .menulate a:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transform: scale(1.20) translateY(-5px);
+    transition: .3s;
+}
+
+main {
+    margin-left: 240px;
+    padding: 20px;
+}
+
 footer{
     padding: 20px;
     background-color: beige;
@@ -63,3 +101,4 @@ footer{
     font-size: 2rem;
     font-weight: 600;
 }
+
