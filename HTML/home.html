@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Conceptos Básicos de HTML y CSS</title>
     <link rel="stylesheet" href="./../CSS/home.css">
 </head>
 
@@ -22,7 +22,7 @@
             </ul>
         </nav>
     </header>
-    <main>
+    <main class="conmen">
 
         <nav>
             <ul class="menu_late">
@@ -48,9 +48,9 @@
         <article class="inicio" id="inic">
             <h2>¿Qué es HTML?</h2>
             <p>HTML es un lenguaje de marcado utilizado para estructurar y presentar contenido en la web. Es un
-                lenguajede marcado de etiquetas que utiliza la etiqueta &lt;html&gt; como el encabezado del documento.
-                HTML seutiliza para crear páginas web dinámicas y interactivas, y se utiliza para estructurar el
-                contenido dela página web.</p>
+                lenguaje de marcado de etiquetas que utiliza la etiqueta &lt;html&gt; como el encabezado del documento.
+                HTML se utiliza para crear páginas web dinámicas y interactivas, y se utiliza para estructurar el
+                contenido de la página web.</p>
 
             <h2>¿Qué es CSS?</h2>
             <p>CSS (Cascading Style Sheets) es un lenguaje de estilos utilizado para describir la presentación de
@@ -72,15 +72,15 @@
             </div>
 
             <h2 class="selectores" id="selec">Selectores</h2>
-            <p>LEn CSS, los selectores son las herramientas que nos permiten aplicar estilos a elementos específicos
+            <p>En CSS, los selectores son las herramientas que nos permiten aplicar estilos a elementos específicos
                 dentro de una página web. En otras palabras, sirven para indicar qué etiqueta o elemento HTML queremos
                 modificar y cómo queremos que se vea. Gracias a ellos podemos controlar propiedades como el color, el
                 tamaño de la fuente, los márgenes, la posición, el espaciado, entre muchas otras características
                 visuales.</p>
 
+            <h3>✅ Importancia de los selectores</h3>
+            <p>Comprender cómo funcionan los selectores es fundamental porque nos permiten:</p>
             <ul>
-                <h3>✅ Importancia de los selectores</h3>
-                <p>Comprender cómo funcionan los selectores es fundamental porque nos permiten:</p>
                 <li><strong>Precisión:</strong> elegir exactamente qué elementos queremos modificar</li>
                 <li><strong>Eficiencia:</strong> aplicar estilos de forma organizada y reutilizable</li>
                 <li><strong>Escalabilidad:</strong> mantener el código CSS limpio y fácil de mantener</li>
@@ -100,8 +100,7 @@
                     <code>#footer</code>, <code>#menu</code> y <code>#content</code>.
                 </li>
 
-                <ul>
-                    <h2 class="boxmodel" id="box">Box Model</h2>
+                <h2 class="boxmodel" id="box">Box Model</h2>
                     <p>El modelo de caja es un modelo de diseño que se utiliza para crear diseños de interfaz de usuario
                         (UI) en línea. El modelo de caja se basa en cuatro elementos fundamentales: contenedor, borde,
                         espacio y contenido. Estos elementos se utilizan para crear diseños que se adapten a diferentes
@@ -124,28 +123,39 @@
                         posicionamiento complejo.</p>
 
                     <h3>📌 Concepto básico</h3>
-                    <p>- <strong>Nombre completo:</strong> CSS Flexible Box Layout Module.
-                        <li>- <strong>Función principal:</strong> Distribuir espacio y alinear elementos dentro de un
+
+                    <ul>
+                    <li><strong>Nombre completo:</strong> CSS Flexible Box Layout Module.</li>
+                        <li><strong>Función principal:</strong> Distribuir espacio y alinear elementos dentro de un
                             contenedor.</li>
-                        <li>- <strong>Unidimensional:</strong> Trabaja en una sola dirección a la vez (horizontal o
-                            vertical).
-                        <li>- <strong>Componentes clave:</strong></li>
-                        <li>- <strong>Flex container:</strong> El elemento padre con <strong>display: flex</strong> o
+                        <li><strong>Unidimensional:</strong> Trabaja en una sola dirección a la vez (horizontal o
+                            vertical).</li>
+                    </ul>
+
+                    <h3>Componentes clave</h3>
+
+                    <ul>
+                        <li><strong>Flex container:</strong> El elemento padre con <strong>display: flex</strong> o
                             <strong>display: inline-flex</strong>.</li>
-                    <p>- <strong>Flex items:</strong> Los elementos hijos que se organizan automáticamente dentro del
-                        contenedor.</li>
+                        <li><strong>Flex items:</strong> Los elementos hijos que se organizan automáticamente dentro del
+                            contenedor.</li></ul>
+
+                            <img src="./../img/code1.png" alt="codigo de ejemplo" class="imgflex">
 
                     <h3>🔑 Propiedades más importante</h3>
-                    <li><strong>- flex-direction:</strong>Define la dirección principal <strong>- (row, column</strong>)
-                    </li>
-                    <li><strong>- justify-content:</strong>Controla la alineación en el eje principal (izquierda,
+
+                    <ul>
+                    <li><strong>flex-direction:</strong> Define la dirección principal (row, column)</li>
+                    <li><strong>justify-content:</strong> Controla la alineación en el eje principal (izquierda,
                         derecha, centro, espacio entre elementos).</li>
-                    <li><strong>- align-items:</strong>Controla la alineación en el eje secundario (arriba, abajo,
+                    <li><strong>align-items:</strong> Controla la alineación en el eje secundario (arriba, abajo,
                         centro).</li>
-                    <li><strong>- flex-wrap:</strong>CPermite que los elementos se ajusten en varias líneas si no caben
+                    <li><strong>flex-wrap:</strong> Permite que los elementos se ajusten en varias líneas si no caben
                         en una sola.</li>
-                    <li><strong>- flex-grow, flex-shrink, flex-basis:</strong>Controlan cómo los elementos crecen, se
+                    <li><strong>flex-grow, flex-shrink, flex-basis:</strong> Controlan cómo los elementos crecen, se
                         encogen o definen su tamaño base.</li>
+                    </ul>
+
         </section>
 
     </main>
