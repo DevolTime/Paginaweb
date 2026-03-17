@@ -17,6 +17,29 @@ body{
     letter-spacing: -0.5px;
 }
 
+.menu_logo, imag{
+    width: 4rem;
+}
+
+#toggle_menu, .menu_logo{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ul{
     list-style-position: inside;
 }
@@ -24,7 +47,7 @@ ul{
 .navbar{
     display: flex;
     padding: 4px 20px 4px 20px;
-    background-color: beige;
+    background-color : black;
     justify-content: space-between;
     align-items: center;
 }
@@ -45,21 +68,26 @@ ul{
     list-style: none;
 }
 
+.item{
+    padding: 10px;
+}
+
 .menu_list a {
     text-decoration: none;
-    color: black;
+    color: white;
     font-weight: 600;
     font-size: 1.8rem;
 }
 
 .menu_list a:hover{
-    color: white;
-    box-shadow: 0 0 10px black;
-    background-color: black;
+    color: black;
+    box-shadow: 0 0 10px white;
+    background-color: white;
     border-radius: 3px;
     transition: .3s;
 }
 .menu_late {
+    position: relative;
     position: fixed;
     top: 70px;
     left: 0;
@@ -136,10 +164,16 @@ ul {
     margin-bottom: 20px;
 }
 
+
+
+
+
+
+
 footer{
-    padding: 20px;
-    background-color: beige;
-    color: black;
+    padding: 4px;
+    background-color: black;
+    color: white;
     text-align: center;
     margin-top: auto;
     font-size: 2rem;
