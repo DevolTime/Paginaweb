@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,46 +8,56 @@
     <link rel="stylesheet" href="./../CSS/home.css">
     <link rel="stylesheet" href="./../CSS/contacto.css">
 </head>
+
 <body>
     <header>
         <nav class="navbar">
             <div class="logo">
                 <img src="./../img/logo.png" alt="logo" class="imag">
             </div>
+
+            <input type="checkbox" id="toggle_menu" class="logocheck">
+            <label for="toggle_menu">
+                <img src="./../img/menu.png" alt="" class="menu_logo">
+            </label>
+
             <ul class="menu_list">
-                <li class="item"><a href="home.html">Inicio</a></li>
+                <li class="item"><a href="index.html">Inicio</a></li>
                 <li class="item"><a href="galeria.html">Galeria</a></li>
                 <li class="item"><a href="#">Contacto</a></li>
-                <li class="item"><a href="formu.html">Formulario</a></li>
+                <!-- <li class="item"><a href="formu.html">Formulario</a></li> -->
             </ul>
         </nav>
     </header>
     <main>
 
-        <h1 class="contacto-title">Contacto</h1>
-        <p class="correo_texto">Si deseas ponerte en contacto conmigo, puedes hacerlo a través del siguiente medio:</p>
+        <div class="text">
+            <h1 class="contacto-title">Contacto</h1>
+            <p class="correo_texto">Si deseas ponerte en contacto conmigo, puedes hacerlo a través del siguiente medio:
+            </p>
 
-        <form class="contact-form" action="https://formspree.io/f/xwvrbygn" method="POST">
-            <label for="name">Nombre:</label>
-            <input type="text" id="name" name="name" placeholder="Nombre" required>
+            <form class="contact-form" action="https://formspree.io/f/xwvrbygn" method="POST">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" placeholder="Nombre" required>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
 
-            <label for="subject">Asunto:</label>
-            <input type="text" id="subject" name="subject" placeholder="Asunto" required>
+                <label for="subject">Asunto:</label>
+                <input type="text" id="subject" name="subject" placeholder="Asunto" required>
 
-            <label for="message">Mensaje:</label>
-            <textarea id="message" name="message" placeholder="Escribe aquí tu mensaje" required></textarea>
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" placeholder="Escribe aquí tu mensaje" required></textarea>
 
-            <button type="submit">Enviar</button>
+                <button type="submit">Enviar</button>
 
-        </form>
-
+            </form>
+        </div>
     </main>
     <footer>
         <p>© 2026 Todos los derechos reservados</p>
     </footer>
 
 </body>
+
 </html>

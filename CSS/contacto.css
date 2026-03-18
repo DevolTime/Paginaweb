@@ -6,13 +6,23 @@ body{
     text-align: center;
     font-size: 3rem;
     margin-top: 2rem;
+    line-height: 1.2;
 }
 .correo_texto{
+    display: flex; 
+    flex-direction: column;
     text-align: center;
     font-size: 1.8rem;
     font-weight: bold;
+    height: 50%;
+    width: 50%;
+    margin: auto; 
+    line-height: 1.2;
 }
 
+html{
+    font-family: hack nerd font;
+}
 
 .contact-form {
     display: flex;
