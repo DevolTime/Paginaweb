@@ -35,7 +35,7 @@ img{
     transform: rotate(-6deg);
 }
 
-img_gale{
+/* img_gale{
     width: 200px;
     height: 200px;
     object-fit: cover;
@@ -46,7 +46,7 @@ img_gale:hover{
     transform: scale(1.2);
     filter: opacity(1);
     transition: .4s;
-}
+} */
 
 .im1:hover{
     transform: rotate(6deg);
