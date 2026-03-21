@@ -24,7 +24,8 @@ body {
     border: 2px solid red;
     height: 100%;
     width: 60%;
-    margin: 0 auto;
+    margin: 50px auto;
+    font-size: 1.5rem;
 }
 
 .imag,
@@ -38,6 +39,11 @@ body {
     display: none;
 }
 
+#toggle_menu {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
 
 ul {
     list-style-position: inside;
@@ -84,12 +90,15 @@ ul {
 
 .menu_late {
     position: relative;
-    position: fixed;
+}
+
+.menu_late {
+    position: absolute;
     top: 70px;
     left: 0;
     padding: 20px 15px;
     background-color: rgba(200, 198, 198, 0.712);
-    border-right: 1px solid rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(0, 0, 0, 0.15);
     list-style: none;
     border-radius: 20px;
     box-shadow: #222 0 0 10px;
@@ -115,15 +124,9 @@ ul {
     transition: .3s;
 }
 
-.mein {
-    padding: 20px;
-    font-size: 16px;
-    font-family: hack nerd font;
-}
-
 .imgflex {
-    width: 600px;
-    max-width: 800px;
+    max-width: 100%;
+    height: auto;
     margin: 20px auto;
     display: block;
     border-radius: 20px;
@@ -131,16 +134,12 @@ ul {
 }
 
 .imgbox {
-    width: 600px;
-    max-width: 800px;
+    max-width: 100%;
+    height: auto;
     margin: 20px auto;
     display: block;
     border-radius: 20px;
     box-shadow: 3px 0px 10px rgba(0, 0, 0, 0.2);
-}
-
-.container {
-    padding: 20px;
 }
 
 
@@ -194,6 +193,69 @@ tr:nth-child(even) {
     background-color: #f2f2f2;
 }
 
+.menu_late:has(.logocheck:checked) {
+    opacity: 1;
+    transition: .6s;
+    transform: translateY(20px);
+}
+
+@media (max-width: 800px) {
+
+    .tabla {
+    height: auto;
+    width: 255px;
+    table-layout: fixed
+    }
+    
+    .imag {
+        display: none;
+    }
+
+    .menu_logo {
+        display: block;
+    }
+
+    .navbar {
+        flex-direction: row-reverse;
+    }
+
+    .menu_late {
+        opacity: 0;
+        margin: 0 auto;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        padding: 0 auto 0 auto;
+        width: 410px;
+        text-align: center;
+        background-color: rgba(200, 198, 198, 0.877);
+    }
+}
+
+
+
+
+@media (max-width: 400px) {
+    .menu_late {
+        opacity: 0;
+        margin: 0 auto;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        padding: 0 auto 0 auto;
+        width: 380px;
+        text-align: center;
+        background-color: rgba(200, 198, 198, 0.877);
+    }
+
+    .tabla {
+    height: auto;
+    width: 231px;
+    table-layout: fixed
+    }
+}
 
 
 footer {

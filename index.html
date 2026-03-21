@@ -16,7 +16,6 @@
                 <img src="./../img/logo.png" alt="logo" class="imag">
             </div>
 
-            <input type="checkbox" id="toggle_menu" class="logocheck">
             <label for="toggle_menu">
                 <img src="./../img/menu.png" alt="" class="menu_logo">
             </label>
@@ -32,6 +31,7 @@
 
         <nav class="late_menu">
             <ul class="menu_late">
+                <input type="checkbox" id="toggle_menu" class="logocheck">
                 <li class="menulate"><a href="#inic">Inicio</a></li>
                 <li class="menulate"><a href="#propi">Propiedades</a></li>
                 <li class="menulate"><a href="#selec">Selectores</a></li>
@@ -123,7 +123,7 @@
                         <code>#footer</code>, <code>#menu</code> y <code>#content</code>.
                     </li>
 
-                    <table>
+                    <table class="tabla">
                         <tr>
                             <th>Tipo de selector</th>
                             <th>Ejemplo</th>
@@ -166,11 +166,12 @@
                         </tr>
                         <tr>
                             <td>Atributo</td>
-                            <td>input[type="text"] { }</td>
+                            <td>input[type=
+                                "text"] { }</td>
                             <td>Según atributos</td>
                         </tr>
                         <tr>
-                            <td>Pseudoclase</td>
+                            <td>Pseudo clase</td>
                             <td>a:hover { }</td>
                             <td>Estados dinámicos</td>
                         </tr>
@@ -245,7 +246,6 @@
     <footer>
         <p>© 2026 Todos los derechos reservados</p>
     </footer>
-
 </body>
 
 </html>
