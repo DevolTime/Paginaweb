@@ -21,7 +21,6 @@ body {
     flex-direction: column;
     text-align: center;
     letter-spacing: -0.5px;
-    border: 2px solid red;
     height: 100%;
     width: 60%;
     margin: 50px auto;
