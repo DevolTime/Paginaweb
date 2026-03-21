@@ -20,10 +20,6 @@ body{
     line-height: 1.2;
 }
 
-html{
-    font-family: hack nerd font;
-}
-
 .contact-form {
     display: flex;
     flex-direction: column;
