@@ -12,7 +12,8 @@ html {
 body {
     background-color: rgba(200, 198, 198, 0.712);
     min-height: 100vh;
-
+    display: grid;
+    grid-template-rows: auto 1fr auto;
 }
 
 .contenedor {
@@ -22,7 +23,7 @@ body {
     letter-spacing: -0.5px;
     height: 100%;
     width: 60%;
-    margin: 50px auto;
+    margin: 0 auto;
     font-size: 1.5rem;
 }
 
@@ -204,11 +205,11 @@ tr:nth-child(even) {
     }
 
     .tabla {
-    height: auto;
-    width: 255px;
-    table-layout: fixed
+        height: auto;
+        width: 255px;
+        table-layout: fixed
     }
-    
+
     .imag {
         display: none;
     }
@@ -250,9 +251,9 @@ tr:nth-child(even) {
     }
 
     .tabla {
-    height: auto;
-    width: 231px;
-    table-layout: fixed
+        height: auto;
+        width: 231px;
+        table-layout: fixed
     }
 }
 
