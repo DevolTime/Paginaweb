@@ -12,8 +12,7 @@ html {
 body {
     background-color: rgba(200, 198, 198, 0.712);
     min-height: 100vh;
-    display: grid;
-    grid-template-rows: auto 1fr auto;
+
 }
 
 .contenedor {
@@ -200,6 +199,10 @@ tr:nth-child(even) {
 
 @media (max-width: 800px) {
 
+    .footer {
+        font-size: 1.2rem;
+    }
+
     .tabla {
     height: auto;
     width: 255px;
@@ -232,9 +235,6 @@ tr:nth-child(even) {
     }
 }
 
-
-
-
 @media (max-width: 400px) {
     .menu_late {
         opacity: 0;
@@ -263,6 +263,6 @@ footer {
     color: white;
     text-align: center;
     margin-top: auto;
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-weight: 600;
 }
